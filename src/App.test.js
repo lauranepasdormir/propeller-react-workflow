@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders DirtMate link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const linkElement = screen.getByText(/explore dirtmate/i);
+  expect(linkElement).toHaveAttribute('href', 'https://www.propelleraero.com/dirtmate/');
 });
